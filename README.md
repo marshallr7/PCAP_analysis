@@ -4,7 +4,8 @@ The program accepts a PCAP file and parses the TCP connections inside.
 
 # Installation and Execution
 To install this program, you can clone or download it from the GitHub repository 
-(https://github.com/marshallr7/PCAP_analysis). 
+(https://github.com/marshallr7/PCAP_analysis).
+To install Scapy, you will need to execute the following command in your environment: `pip install scapy`.
 Once installed, open your terminal and navigate to the installation folder. 
 Once there, run `Python3 src/main.py`.
 
