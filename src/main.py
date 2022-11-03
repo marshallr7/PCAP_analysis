@@ -31,7 +31,6 @@ def parse_file(packet_storage: list, packet_file: str):
 
 
 def get_tcp_flow_from_sender(packet_storage: list, sender: str):
-    # A TCP flow starts with SYN and ends with FIN
     # TCP flow is identified by a port, IP, destination port, destination IP
     tcp_from_sender = 0
     for packet in packet_storage:
