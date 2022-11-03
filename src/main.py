@@ -27,7 +27,7 @@ def parse_file(packet_storage: list, packet_file: str):
     for packet in rdpcap(packet_file):
         if packet.haslayer(TCP):
             store_packet_info(packet_storage, packet["Ether"]["TCP"].sport, packet["Ether"]["IP"].src,
-                           packet["Ether"]["TCP"].dport, packet["Ether"]["IP"].dst)
+                              packet["Ether"]["TCP"].dport, packet["Ether"]["IP"].dst)
 
 
 def get_tcp_flow_from_sender(packet_storage: list, sender: str):
